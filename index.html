@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Masculine Bible — by Andrae Barnes</title>
+
+  <meta name="description" content="The Masculine Bible — by Andrae Barnes. Preface and original term creation notes (Zellious, Zeil, Innergy)." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Social preview -->
+  <meta property="og:title" content="The Masculine Bible — by Andrae Barnes" />
+  <meta property="og:description" content="Official Preface + origin of Zellious, Zeil, and Innergy." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="cover.jpg" />
+
+  <style>
+    :root{
+      --bg:#0b0c10;
+      --paper:#0f1117;
+      --ink:#f4f5f7;
+      --muted:#b8bcc6;
+      --line:rgba(255,255,255,.10);
+      --accent:rgba(255,255,255,.14);
+      --max: 900px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-serif, Georgia, "Times New Roman", Times, serif;
+      background: radial-gradient(1200px 800px at 20% 0%, rgba(255,255,255,.07), transparent 55%),
+                  radial-gradient(900px 700px at 80% 20%, rgba(255,255,255,.05), transparent 60%),
+                  var(--bg);
+      color:var(--ink);
+      line-height:1.65;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    a{color:var(--ink)}
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 32px 18px 64px;
+    }
+    header{
+      padding: 26px 20px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      position: relative;
+      overflow:hidden;
+    }
+    header:before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background: radial-gradient(500px 220px at 10% 0%, rgba(255,255,255,.12), transparent 60%);
+      pointer-events:none;
+    }
+    .kicker{
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:var(--muted);
+      font-size:12px;
+      margin:0 0 10px;
+      position:relative;
+      z-index:1;
+    }
+    h1{
+      margin:0 0 10px;
+      font-size: clamp(28px, 3.4vw, 44px);
+      line-height:1.15;
+      position:relative;
+      z-index:1;
+    }
+    .byline{
+      margin:0;
+      color:var(--muted);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size:14px;
+      position:relative;
+      z-index:1;
+    }
+    .cover-row{
+      display:flex;
+      gap:18px;
+      align-items:flex-start;
+      margin-top:18px;
+      position:relative;
+      z-index:1;
+      flex-wrap:wrap;
+    }
+    .cover{
+      width: min(320px, 100%);
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 40px rgba(0,0,0,.45);
+      background: rgba(255,255,255,.03);
+      overflow:hidden;
+    }
+    .cover img{
+      display:block;
+      width:100%;
+      height:auto;
+    }
+    .note{
+      flex: 1 1 340px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 14px;
+    }
+    main{
+      margin-top: 22px;
+      padding: 28px 22px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(15,17,23,.80);
+      box-shadow: 0 10px 30px rgba(0,0,0,.30);
+    }
+    h2{
+      font-size: clamp(22px, 2.2vw, 30px);
+      margin: 0 0 12px;
+      line-height:1.2;
+    }
+    h3{
+      margin: 26px 0 10px;
+      font-size: 20px;
+      line-height:1.25;
+    }
+    p{margin: 12px 0}
+    .lead{
+      font-size: 18px;
+      color: rgba(244,245,247,.92);
+    }
+    hr{
+      border:0;
+      border-top:1px solid var(--line);
+      margin: 22px 0;
+    }
+    .quote-tag{
+      display:inline-block;
+      padding:6px 10px;
+      border:1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin-top: 6px;
+    }
+    .term{
+      margin-top: 18px;
+      padding: 18px 16px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    .term-title{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 14px;
+      align-items:baseline;
+      margin:0 0 8px;
+    }
+    .term-title strong{
+      font-size: 22px;
+      letter-spacing:.02em;
+    }
+    .phon{
+      color: var(--muted);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 13px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:4px 10px;
+      background: rgba(255,255,255,.02);
+    }
+    ul{
+      margin: 10px 0 0 20px;
+      padding: 0;
+    }
+    li{margin: 6px 0}
+    .small{
+      color: var(--muted);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 13px;
+    }
+    footer{
+      margin-top: 20px;
+      text-align:center;
+      color: var(--muted);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-size: 13px;
+    }
+    .caps{
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <p class="kicker">Official Preview Page</p>
+      <h1>The Masculine Bible</h1>
+      <p class="byline"><span class="caps">By</span> Andrae Barnes</p>
+
+      <div class="cover-row">
+        <div class="cover">
+          <!-- Put your cover image in the same folder as this HTML and name it: cover.jpg (or change the filename below). -->
+          <img src="cover.jpg" alt="The Masculine Bible — by Andrae Barnes (Book Cover)">
+        </div>
+        <div class="note">
+          <p><strong>Quick setup:</strong> upload this <code>index.html</code> and your cover image named <code>cover.jpg</code> into your GitHub repo root.</p>
+          <p class="small">Tip: If your cover is PNG, rename it to <code>cover.jpg</code> or update the filename in this HTML.</p>
+          <span class="quote-tag">SEO phrase locked: “The Masculine Bible — by Andrae Barnes”</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2>Preface</h2>
+
+      <p class="lead">
+        Modern men speak a language that works against them. Not because English has fault, but because the way men use the English language has softened, diluted, and shifted toward feminine energy. Being taught to speak from a place of uncertainty—to chase rather than lead, to react rather than observe. This isn't random—it's by design. From entertainment to classrooms, hip hop to relationships; masculine energy has been restructured and handed over to the process of emasculation.
+      </p>
+
+      <p>What was once firm has become flexible. What was once present has become passive. This book restores that balance.</p>
+
+      <p>
+        Not just talking about grammar or syntax—but this is about <strong>ENERGY</strong>: <strong>Innergy</strong> / the energy behind your words. You see every word you speak carries an energetic charge... It either builds your masculine presence or drains it. Words are more than just sound—they create. They determine whether you are respected or overlooked; whether you command or comply; whether you lead or follow.
+      </p>
+
+      <p>
+        At the root of this work is a core truth: masculinity is positive energy. Direction, certainty, stability, and leadership. It initiates growth and betterment. It solves problems. It is resolutional. Resourceful. Doesn't ask—it observes. It doesn't chase—it attracts. It doesn't react—it calculates. This is the language of Being. The language of Knowing. The language of I Am.
+      </p>
+
+      <p>
+        Now the world often speaks of masculine and feminine as opposing forces. But they are not opposed—but complementary to each other with distinct purpose following God's divine design. Masculinity was created to initiate, direct, and provide. Feminine energy was created to expand, magnify, and multiply what it receives. The Man as source; and the Woman as the extension. He gives; she grows. He plants; she nurtures. One is not greater than the other—they work together for the divine pleasures of Oneness and harmony.
+      </p>
+
+      <p>
+        If he mistakes femininity for weakness, he dishonors the will of God. Feminine energy is the manifestation of masculine power. The fertile that multiplies a seed. She is the presence that make the house a home.
+      </p>
+
+      <p>
+        The chapters following are not so much of rules to obey, but of embracing the consistencies of Divine Principles.
+      </p>
+
+      <p>
+        As light unto darkness; Love reveals. Like structure, Love sustains. What is written in this book is not written for theory; but to show men how to dwell fully in himself, I and also; to see the Woman rightfully in Hers. For if He is God, She is Goddess
+      </p>
+
+      <p>
+        These words are to reclaim the integrity of masculinity, fatherhood, and manhood—through God's Divine Principles.
+      </p>
+
+      <p>
+        Rests a truth that relies on the final line. Read not with haste, but with presence for the voice of life does not speak to the eyes, but to the soul. <strong>#draevhibes</strong>
+      </p>
+
+      <hr>
+
+      <h2>On the Word Creation of Zellious, Zeil, and Innergy</h2>
+      <p class="small"><strong>By Andrae Barnes</strong></p>
+
+      <p>
+        Language is not just how we speak—it's how we transmit energy.
+        In the spirit of masculine clarity, I created three original terms to describe distinct expressions of masculine presence.
+        These words did not exist in language, but they always existed in energy. I brought them forward.
+      </p>
+
+      <div class="term" id="zellious">
+        <div class="term-title">
+          <strong>Zellious</strong> <span>(ZEHL-lee-us)</span>
+          <span class="phon">Phonetic: /ˈzɛ. li.əs/</span>
+        </div>
+        <p><em>Masculine radiance. The active glow of motion and intent.</em></p>
+        <ul>
+          <li><strong>Definition:</strong> The outward expression of inner order. It is the shine that emits from a man whose energy is aligned with truth. The visible light of discipline, direction, and divine balance.</li>
+          <li><strong>Function:</strong> Action form—the doing, the expression, the movement of masculine energy through intent.</li>
+          <li><strong>Origin:</strong> Derived from <strong>ZEIL</strong>, the still core of masculine gravity; the inner glow.</li>
+          <li><strong>Example:</strong> You must be ZELLIOUS—walk with great intentions, move with calm, and let your presence speak before your words do.</li>
+        </ul>
+      </div>
+
+      <div class="term" id="zeil">
+        <div class="term-title">
+          <strong>Zeil</strong> <span>(ZEE-hul)</span>
+          <span class="phon">Phonetic: /ˈziː. hʊl/</span>
+        </div>
+        <p><em>Masculine weight. The gravity of spiritual presence; energetic heaviness.</em></p>
+        <ul>
+          <li><strong>Meaning:</strong> Masculine weight; the gravity of spiritual presence.</li>
+          <li><strong>Definition:</strong> The silent density within a man that anchors his existence. ZEIL is the unseen force that steadies his spirit and grounds his aura. It is the core stillness that others feel before he speaks—the invisible authority that commands respect without effort. ZEIL is not heaviness of burden but weight of being—the centered calm that shapes his world. It is energetic heaviness—felt, not seen.</li>
+          <li><strong>Function:</strong> State form—the being, the center, the unmoved pulse of masculine presence.</li>
+          <li><strong>Example:</strong> He stood without a word, yet the atmosphere shifted under his ZEIL.</li>
+        </ul>
+      </div>
+
+      <div class="term" id="innergy">
+        <div class="term-title">
+          <strong>Innergy</strong> <span>(IN-er-jee)</span>
+        </div>
+        <p><em>The unseen charge that defines being. Source core.</em></p>
+        <ul>
+          <li><strong>Definition:</strong> Innergy is the essence of a one's soul—the charge that flows before action, before words, before movement. It is not what you do, it is what you are.</li>
+          <li>Innergy is the quiet fire, the internal current that aligns thought, spirit, and body.</li>
+          <li>When a person masters their Innergy they master their actions.</li>
+        </ul>
+      </div>
+
+      <hr>
+
+      <h3>Declaration of Origin</h3>
+      <p>
+        I, Andrae Barnes, am the sole creator and originator of these words, their meanings, and their intended use within <strong>The Masculine Bible</strong>.
+        These are not borrowed. These are authored. This language belongs to understanding that energy conscience is a thing.
+        Men MUST carry presence with the understanding that all things manifest from within. Identity and Purpose is Destiny.
+      </p>
+
+      <p class="small">If you want to add more pages later: create <code>chapter-1.html</code>, <code>about.html</code>, etc., then link them from here.</p>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Andrae Barnes. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
